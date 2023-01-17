@@ -38,6 +38,13 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/rollkit/docs/tree/main/',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'RDK 1.0.0',
+              path: '1.0.0',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
@@ -68,6 +75,12 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Docs',
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+            // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
           },
           {
             href: 'https://twitter.com/Rollkitdev',
