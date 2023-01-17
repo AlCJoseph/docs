@@ -41,7 +41,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: 'RDK 1.0.0',
+              label: 'Version 1.0.0',
               path: '1.0.0',
             },
           },
